@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/free-vector/abstract-black-lines-geometric-background_677411-2748.jpg);
+    color: white;
+ }
+ 
+ /* navbar section */
+ .navbar{
+     display: flex;
+     flex-direction: row;
+     /* border: 1px solid skyblue; */
+     position: fixed;
+     width: 100%;
+     top: 0;
+     background-color: transparent;
+     z-index: 1000;
+     justify-content: space-between;
+ }
+ .navbar.scrolled {
+     background-color: black;
+     height: 50px;
+     transition: all 0.3s ease;
+ }
+ .navbar.scrolled .navbar-h1{
+     font-size: 30px;
+     padding-left: 20px;
+     transition: all 0.3s ease;
+ }
+ .navbar-h1{
+     color: darkcyan;
+     font-size: 40px;
+     padding-left: 40px;
+ }
+ .navbar-right{
+     padding-right: 20px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+ .a-element{
+     padding: 10px;
+     font-size: 20px;
+     font-weight: bold;
+     text-decoration: none;
+     color: white;
+ }
+ .a-element:hover{
+     color: darkcyan;
+ }
+ /* toggle button */
+ .menu-toggle {
+     display: none;
+     font-size: 30px;
+     background: none;
+     border: none;
+     color: white;
+     cursor: pointer;
+     padding: 10px;
+ }
+ #button1 {
+     background-color: transparent;
+     color: white;
+     border: none;
+     outline: none;
+ }
+ #button1:hover , #button1:focus{
+     outline: none;
+     box-shadow: none;
+     color: white;
+     background: none;
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .navbar-right {
+         display: none;
+         flex-direction: column;
+         background-color: transparent;
+         position: absolute;
+         top: 60px;
+         left: 20px;
+         width: 100%;
+         text-align: left;
+         padding: 60px 0;
+     }
+     .navbar-right a {
+         display: block;
+         padding: 10px;
+         text-align: left;
+     }
+     .menu-toggle {
+         display: block;
+     }
+     .navbar-right.active {
+         display: flex;
+         justify-content: flex-start;
+         align-items: flex-start;
+     }
+ }
+ 
+ .home {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     height: 85vh;
+     border: 1px solid black;
+ }
+ .home-left{
+     width: 50vw;
+     text-align: left;
+     padding-left: 200px;
+     padding-top: 10%;
+ }
+ .social-links {
+     padding-left: 40%;
+     display: flex;
+     flex-direction: row;
+ }
+ .social-links a {
+     margin-right: 20px;
+     display: inline-block;
+ }
+ .social-icon {
+     width: 40px;
+     height: 40px;
+     border-radius: 10px;
+     transition: transform 0.3s;
+ }
+ .social-icon:hover {
+     transform: scale(1.2);
+ }
+ .home-right{
+     width: 50vw;
+     padding-left: 80px;
+     padding-top: 10%;
+ }
+ .mypic{
+     height: 300px;
+     border-radius: 130px;
+ }
+ .home-h1{
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 25px;
+ }
+ .home-h1 span{
+     color: darkcyan;
+ }
+ .home-p{
+     font-family: sans-serif;
+     font-size: 20px;
+ }
+ 
+ 
+ /* ABOUT ME */
+ .about-me {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-top: 180px;
+ }
+ .about-h1{
+     color: darkcyan;
+     font-size: 40px;
+ }
+ .about-img{    
+     height: 300px;
+     border-radius: 130px;
+     padding: 80px;
+ }
+ .about-left{
+     padding-left: 40px;
+     width: 50vw;
+ }
+ .about-right{
+     padding-right: 90px;
+     text-align: left;
+     padding-left: 20px;
+ }
+ .strong{
+     color: rgb(110, 152, 154);
+ }
+ .container {
+     width: 50%;
+ }
+ .nav-tabs {
+     display: flex;
+     justify-content: left;
+ }
+ .tab-link{
+     font-size: 20px;
+     padding: 5px;
+     text-decoration: none;
+     padding: 10px 20px;
+     color: cadetblue;
+ }
+ .tab-link:hover{
+     color: darkcyan;
+ }
+ .tab-link.active {
+     border-bottom: 3px solid white;
+     font-weight: bold;
+ }
+ .tab-content {
+     display: none;
+     padding: 20px;
+ }
+ .tab-content.active {
+     display: block;
+ }
+ .skills-container {
+     margin-top: 20px;
+     text-align: left;
+ }
+ .skill {
+     margin-bottom: 10px;
+ }
+ .progress {
+     background: white;
+     border-radius: 10px;
+     height: 12px;
+     width: 100%;
+     overflow: hidden;
+ }
+ .progress-bar {
+     background: blueviolet;
+     height: 100%;
+     text-align: right;
+     padding-right: 5px;
+     color: white;
+     font-size: 12px;
+ }
+ 
+ 
+ /* PROJECT SECTION */
+ .projects-h1{
+     text-align: center;
+     color: darkcyan;
+     font-size: 40px;
+     padding-top: 50px;
+ }
+ /* Project Cards */
+ .project-container {
+     display: flex;
+     justify-content: center;
+     gap: 150px;
+     flex-wrap: wrap;
+     margin-top: 30px;
+     padding-top: 60px;
+ }
+ .project-card {
+     position: relative;
+     width: 350px;
+     height: 450px;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+ }
+ .project-card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ .overlay {
+     position: absolute;
+     bottom: 0;
+     color: white;
+     padding: 20px;
+     text-align: center;
+ }
+ .overlay h3 {
+     font-size: 30px;
+     font-weight: bold;
+ }
+ .overlay p {
+     font-size: 24px;
+ }
+ 
+ /* CONTACT SECTION */
+ .contact{
+     text-align: center;
+     padding-top: 30px;
+ }
+ .contact-h1{
+     color: darkcyan;
+     font-size: 40px;
+ }
+ input, textarea{
+     background-color: #333;
+     border: none;
+     padding-top: 40px;
+     padding: 12px;
+     margin-bottom: 15px;
+     border-radius: 5px;
+     color: white;
+     font-size: 16px;
+     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+ }
+ .textarea{
+     height: 60px;
+     resize: none;
+ }
+ button {
+     background-color: #007bff;
+     color: white;
+     border: none;
+     padding: 12px;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer;
+ }
+ button:hover {
+     background-color: #0056b3;
+ }
+ 
+ 
+ /* Ensure sections do not overlap */
+ section {
+     min-height: 100vh;
+     padding: 0px;
+     padding-bottom: 10px;
+     box-sizing: border-box;
+ }
+ 
+ .contact label {
+     display: block;
+     text-align: left;
+     padding-left: 32%;
+ }
+ label{
+     display: block;
+     margin-bottom: 5px;
+ }
+ 
+ 
