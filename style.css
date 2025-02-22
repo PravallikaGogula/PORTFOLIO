@@ -175,6 +175,7 @@ body{
  }
  .about-right{
      padding-right: 90px;
+     width: 50vw;
      text-align: left;
      padding-left: 20px;
  }
