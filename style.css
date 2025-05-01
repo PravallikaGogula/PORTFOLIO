@@ -232,6 +232,19 @@ body{
      color: white;
      font-size: 12px;
  }
+ .resume-btn{
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.resume-btn:hover{
+    background-color: cadetblue;
+}
  
  
  /* PROJECT SECTION */
